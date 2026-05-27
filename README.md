@@ -15,7 +15,9 @@
 > **方案：** 选择 6 个 ROVMAKER 24V 水下推进器 （3个正桨，3个反桨）
 
 
-  <img src="https://github.com/user-attachments/assets/38057388-4e0a-4360-a512-9ab2fa242a75" width="300" />
+
+  <img width="300" height="300" alt="1c96af2e9e1c6dedbf34b07e7f2fcdd1_720" src="https://github.com/user-attachments/assets/8e338260-1bc4-4655-8323-8a36c859c53f" />
+
   <img width="300" height="300" alt="f84040c7bb4e945844ff14d86c1d2d3b_720" src="https://github.com/user-attachments/assets/f1820e62-1f0a-40a5-aa80-6f9ba28a50ca" />
 
 </div>
