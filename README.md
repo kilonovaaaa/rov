@@ -2,9 +2,9 @@
  此六推进器小型ROV以STM32F407VET6为主控芯片  
 驱动部分：直流无刷电机+电子调速器  舵机  
 外设部分：预留外设接口  
-电源部分：水面岸基高压直流24V供电，两路DCDC降压电路，LDO降压电路  
+电源部分：水面岸基高压直流24V供电，DCDC降压电路，LDO降压电路  
 保护部分：防反接，防短路，防浪涌，防过压设计  
-隔离部分：电源，信号隔离
+隔离部分：电源，信号隔离  
 装配部分：全部板件及所需模块放在舱内并进行固定  
 需考虑的 **余量设计** 和 **热量管理** ，体现在选型和装配中
  <br><br>
@@ -50,7 +50,7 @@
   <img width="300" height="250" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
     
 ### 温湿度传感器  
-* 固定：
+* 固定：利用单通铜柱，或3D支架固定
 <img width="260" height="250" alt="000d7bb960bbd8fa7192fdee13440d75_720" src="https://github.com/user-attachments/assets/e3a569dd-29d8-4e2f-ac4a-8f524022f4e9" />
 <img width="300" height="250" alt="5341b2844a6c0e580578242b02e429b2_720" src="https://github.com/user-attachments/assets/8f9d0fc6-a4a9-4156-84e1-f7f92fa5699b" />  
 
@@ -58,7 +58,14 @@
 （供电12V）  
 
 
-预留探照灯，姿态陀螺仪，串口调试等接口
+> **预留：** 探照灯（供电12V)，姿态陀螺仪等接口，以及串口调试，GPIO接口等  
+<img width="200" height="200" alt="d96eb445224d210bc213a4def4e1f523" src="https://github.com/user-attachments/assets/02df0760-9463-41e6-9d21-50819d186084" />
+<img width="180" height="200" alt="6e7d976220f9b6ba8651b4d6ee719a09_720" src="https://github.com/user-attachments/assets/2994ccb4-0a5e-437f-aa86-aa1432ca1434" />
+<img width="240" height="200" alt="3b54dc04182e4079ab0fd0604c82c331_720" src="https://github.com/user-attachments/assets/251ff13b-6d29-4ff1-b064-900c392122fe" />
+<img width="220" height="200" alt="5210e7315d6d1ff7aa8be2cdc708c282_720" src="https://github.com/user-attachments/assets/44ef85ac-2344-4cce-b77b-97defd593d93" />
+
+
+
 
 
 
