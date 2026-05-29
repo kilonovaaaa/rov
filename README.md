@@ -4,7 +4,7 @@
 外设部分：预留外设接口  
 电源部分：水面岸基高压直流24V供电，两路DCDC降压电路，LDO降压电路  
 保护部分：防反接，防短路，防浪涌，防过压设计  
-隔离部分：电源，信号，通信隔离  
+隔离部分：电源，信号隔离
 装配部分：全部板件及所需模块放在舱内并进行固定  
 需考虑的 **余量设计** 和 **热量管理** ，体现在选型和装配中
  <br><br>
@@ -44,7 +44,7 @@
 
 ## 二. 外设部分  
 ### 深度传感器   
-（供电电源 1.5~3.6V）
+（供电 1.5~3.6V）
 
 
   <img width="300" height="250" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
@@ -54,7 +54,12 @@
 <img width="260" height="250" alt="000d7bb960bbd8fa7192fdee13440d75_720" src="https://github.com/user-attachments/assets/e3a569dd-29d8-4e2f-ac4a-8f524022f4e9" />
 <img width="300" height="250" alt="5341b2844a6c0e580578242b02e429b2_720" src="https://github.com/user-attachments/assets/8f9d0fc6-a4a9-4156-84e1-f7f92fa5699b" />  
 
-### 摄像头
+### 摄像头  
+（供电12V）  
+
+
+预留探照灯，姿态陀螺仪，串口调试等接口
+
 
 
 
