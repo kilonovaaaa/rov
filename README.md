@@ -1,15 +1,15 @@
 # ROV系统设计的介绍
 此六推进器小型ROV以STM32F407VET6为主控芯片，采用水面岸基⾼压直流24V供电，  
 为了实现摄像头的功能，选择以太网通信方案，通过复合脐带缆将动力与以太网信号输送至水下驱动部分。  
-电路板分为四个模块:  
-电调驱动模块  
-多级DCDC降压电源模块  
-主控和外设接口模块，LDO降压电路为芯片提供平稳电压  
-38x38mm 微型百兆交换机板，建立通信
+电路板分为四个模块:   
+1.电调驱动模块  
+2.多级DCDC降压电源模块  
+3.主控和外设接口模块，LDO降压电路为芯片提供平稳电压  
+4.微型百兆交换机板，建立通信
   
 本介绍将从驱动和外设选型，电源设计，电路保护和隔离，以及装配几个部分进行说明，  
 需要考虑的余量设计和热量管理则体现在选型，板子设计和装配中。
- <br><br>
+ <br><br><br>
 
 ## 一.  驱动部分
 
@@ -40,9 +40,9 @@
 * 需考虑扭矩，空载速度，体积，防水等因素。
 > **方案：**  夹爪 斯普特 SPT5425LV-W 防水舵机 ， 摄像头若添加云台可参考 银燕 EMAX ES08MD II 微型舵机
 
-<img width="320" height="250" alt="0d015c6e706cfab896a912e346b672c6_720" src="https://github.com/user-attachments/assets/c59d7846-82a7-47a0-b6f0-263bff31387a" />
+<img width="350" height="250" alt="0d015c6e706cfab896a912e346b672c6_720" src="https://github.com/user-attachments/assets/c59d7846-82a7-47a0-b6f0-263bff31387a" />
 <img width="250" height="250" alt="02439636d6bc7dec981397c0637d4459_720" src="https://github.com/user-attachments/assets/f7e21334-5cbf-4296-883a-4a9b481ba2b4" />
- <br><br>
+ <br><br><br>
 
 ## 二. 外设部分  
 ### 1. 深度传感器   
@@ -66,7 +66,7 @@
 
 
 
-<br><br><br>
+<br><br>
 > **预留：** 探照灯（供电12V)，姿态陀螺仪等接口，以及串口调试，GPIO接口等  
 <img width="200" height="200" alt="d96eb445224d210bc213a4def4e1f523" src="https://github.com/user-attachments/assets/02df0760-9463-41e6-9d21-50819d186084" />
 <img width="180" height="200" alt="6e7d976220f9b6ba8651b4d6ee719a09_720" src="https://github.com/user-attachments/assets/2994ccb4-0a5e-437f-aa86-aa1432ca1434" />
