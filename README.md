@@ -36,7 +36,7 @@
 
   ###  3. 舵机
 * 需考虑扭矩，空载速度，体积，防水等因素。
-> **参考：**  斯普特 SPT5425LV-W 防水舵机，摄像头若添加云台可参考 银燕 EMAX ES08MD II 微型舵机
+> **参考：**  夹爪 斯普特 SPT5425LV-W 防水舵机 ， 摄像头若添加云台可参考 银燕 EMAX ES08MD II 微型舵机
 
 <img width="320" height="250" alt="0d015c6e706cfab896a912e346b672c6_720" src="https://github.com/user-attachments/assets/c59d7846-82a7-47a0-b6f0-263bff31387a" />
 <img width="250" height="250" alt="02439636d6bc7dec981397c0637d4459_720" src="https://github.com/user-attachments/assets/f7e21334-5cbf-4296-883a-4a9b481ba2b4" />
