@@ -66,8 +66,9 @@
 
 
 
-<br><br>
-> **预留：** 探照灯（供电12V)，姿态陀螺仪等接口，以及串口调试，GPIO接口等  
+<br><br>  
+### 4. 预留
+>  探照灯（供电12V)，姿态陀螺仪等接口，以及串口调试，GPIO接口等  
 <img width="200" height="200" alt="d96eb445224d210bc213a4def4e1f523" src="https://github.com/user-attachments/assets/02df0760-9463-41e6-9d21-50819d186084" />
 <img width="180" height="200" alt="6e7d976220f9b6ba8651b4d6ee719a09_720" src="https://github.com/user-attachments/assets/2994ccb4-0a5e-437f-aa86-aa1432ca1434" />
 <img width="240" height="200" alt="3b54dc04182e4079ab0fd0604c82c331_720" src="https://github.com/user-attachments/assets/251ff13b-6d29-4ff1-b064-900c392122fe" />
