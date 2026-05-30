@@ -4,8 +4,10 @@
 电路板分为四个模块:   
 1.电调驱动模块  
 2.多级DCDC降压电源模块  
-3.主控和外设接口模块，LDO降压电路为芯片提供平稳电压  
-4.微型百兆交换机板，建立通信
+3.主控和外设接口模块，LDO降压电路  
+4.微型百兆交换机板，建立通信  
+  <img width="120" height="120" alt="df9ab95c752fe5d95a556db47fde8d25_720" src="https://github.com/user-attachments/assets/79116558-786c-41f8-812d-2544eb9bb9a6" />
+
   
 本介绍将从驱动和外设选型，电源设计，电路保护和隔离，以及装配几个部分进行说明，  
 需要考虑的余量设计和热量管理则体现在选型，板子设计和装配中。
@@ -47,7 +49,7 @@
 ## 二. 外设部分  
 ### 1. 深度传感器   
   
-> **参考：** （供电 1.5~3.6V ，端子 MX1.25）
+> **参考：** （端子 MX1.25）
 
 
   <img width="270" height="225" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
@@ -55,7 +57,7 @@
 ### 2. 温湿度传感器    
  
 
-  > **参考：**  （单通铜柱，或3D支架固定）
+  > **参考：**  
 <img width="260" height="250" alt="000d7bb960bbd8fa7192fdee13440d75_720" src="https://github.com/user-attachments/assets/e3a569dd-29d8-4e2f-ac4a-8f524022f4e9" />
 <img width="300" height="250" alt="5341b2844a6c0e580578242b02e429b2_720" src="https://github.com/user-attachments/assets/8f9d0fc6-a4a9-4156-84e1-f7f92fa5699b" />  
 
@@ -63,20 +65,28 @@
 > **参考：**  IMX307 网络摄像头模组 DC12V供电   
 <img width="240" height="220" alt="bc92b56fc3557287788037797812d187_720" src="https://github.com/user-attachments/assets/861a218f-03ed-496b-b5bd-0f49adb683c1" />
 <img width="220" height="220" alt="daeab980037aac4d4e9659abc597383d_720" src="https://github.com/user-attachments/assets/9c4b4a97-f6f2-406b-bf91-e50c76e9180b" />
-
-
-
-<br><br>  
-### 4. 预留
->  探照灯（供电12V)，姿态陀螺仪等接口，以及串口调试，GPIO接口等  
+<br>  
+  
+  ### 4. 预留
+  
+  >  探照灯（供电12V)，姿态陀螺仪等接口，以及串口调试，GPIO接口等
 <img width="200" height="200" alt="d96eb445224d210bc213a4def4e1f523" src="https://github.com/user-attachments/assets/02df0760-9463-41e6-9d21-50819d186084" />
 <img width="180" height="200" alt="6e7d976220f9b6ba8651b4d6ee719a09_720" src="https://github.com/user-attachments/assets/2994ccb4-0a5e-437f-aa86-aa1432ca1434" />
 <img width="240" height="200" alt="3b54dc04182e4079ab0fd0604c82c331_720" src="https://github.com/user-attachments/assets/251ff13b-6d29-4ff1-b064-900c392122fe" />
 <img width="220" height="200" alt="5210e7315d6d1ff7aa8be2cdc708c282_720" src="https://github.com/user-attachments/assets/44ef85ac-2344-4cce-b77b-97defd593d93" />
 
 
+ <br><br><br>  
+ ## 三. 电源部分
+ 
+### LDO降压（+5V转+3V3)  
+#### TPS73733  
 
-
+输入电压:2.2V~5.5V  
+输出电压:固定3.3V  
+输出电流: 最大1A 
+TPS73733的超低压差可以减少自身发热，低静态电流可以减少功耗，且具有反向电流保护等功能  
+又由选择SOT-223封装，可以使得芯片在密封舱中温升更小
 
 
 
