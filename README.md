@@ -13,7 +13,7 @@
 
 ###  1. 推进器
  * 需考虑推力，体积，整体协调性等因素。
-> **参考参数：**  6 个 ROVMAKER 24V 水下推进器 正反桨
+> **参考：**  6 个 ROVMAKER 24V 水下推进器 正反桨
 
 
 
@@ -28,7 +28,7 @@
 * 需考虑输入电压以及尺寸等参数，支持双向。  
 * 电调持续电流应根据推进器参数选择，**最好选择持续电流为<1.2 倍推进器峰值电流>的电调**，  
    **又考虑到密封舱内散热受限，则可通过选择更大规格的电调，来降低mos导通热损耗**，且大规格电调在市面上型号更丰富，适配性更好。
-> **参考参数：**  2 个 RuiBet 45A 四合一电调 （余下的两个接口做备用）
+> **参考：**  2 个 RuiBet 45A 四合一电调 （余下的两个接口做备用）
 
 
   <img src="https://github.com/user-attachments/assets/9a00fff0-6a99-4727-af38-a84e8b1d9a59" width="250" />
@@ -36,9 +36,9 @@
 
   ###  3. 舵机
 * 需考虑扭矩，空载速度，体积，防水等因素。
-> **参考参数：**  斯普特 SPT5425LV-W 防水舵机，摄像头若添加云台可参考 银燕 EMAX ES08MD II 微型舵机
-<img width="250" height="250" alt="38eb3d88d30f48b4222fc036e32bfbdc_720" src="https://github.com/user-attachments/assets/92ac3b77-3532-4b8f-80c6-175fa7b76395" />
-<img width="350" height="250" alt="0d015c6e706cfab896a912e346b672c6_720" src="https://github.com/user-attachments/assets/c59d7846-82a7-47a0-b6f0-263bff31387a" />
+> **参考：**  斯普特 SPT5425LV-W 防水舵机，摄像头若添加云台可参考 银燕 EMAX ES08MD II 微型舵机
+
+<img width="320" height="250" alt="0d015c6e706cfab896a912e346b672c6_720" src="https://github.com/user-attachments/assets/c59d7846-82a7-47a0-b6f0-263bff31387a" />
 <img width="250" height="250" alt="02439636d6bc7dec981397c0637d4459_720" src="https://github.com/user-attachments/assets/f7e21334-5cbf-4296-883a-4a9b481ba2b4" />
  <br><br>
 
@@ -48,7 +48,7 @@
 > **参考：** （供电 1.5~3.6V ，端子 MX1.25）
 
 
-  <img width="300" height="250" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
+  <img width="270" height="225" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
     
 ### 2. 温湿度传感器    
  
