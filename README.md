@@ -17,6 +17,7 @@
 
 ###  1. 推进器
  * 需考虑推力，体积，整体协调性等因素。
+ * 选择直流无刷电机。
 > **方案：**  6 个 ROVMAKER 24V 水下推进器 正反桨
 
 
@@ -35,8 +36,9 @@
 > **方案：**  2 个 RuiBet 45A 四合一电调 （余下的两个接口做备用）
 
 
-  <img src="https://github.com/user-attachments/assets/9a00fff0-6a99-4727-af38-a84e8b1d9a59" width="250" />
-</div>
+  <img src="https://github.com/user-attachments/assets/9a00fff0-6a99-4727-af38-a84e8b1d9a59" width="200" />
+<img width="320" height="200" alt="42acd2ad6ac0a1f1876194c1bc5a01f1_720" src="https://github.com/user-attachments/assets/286d5e2b-ba2a-4920-b492-f99b5e91473d" />
+
 
   ###  3. 舵机
 * 需考虑扭矩，空载速度，体积，防水等因素。
@@ -52,7 +54,7 @@
 > **参考：** （端子 MX1.25）
 
 
-  <img width="270" height="225" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
+  <img width="260" height="200" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
     
 ### 2. 温湿度传感器    
  
