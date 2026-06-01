@@ -51,7 +51,7 @@
 ## 二. 外设部分  
 ### 1. 深度传感器   
   
-> **参考：** （端子 MX1.25）
+> **参考：**  实际需要5V供电 （端子 MX1.25）
 
 
   <img width="260" height="200" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
