@@ -1,6 +1,6 @@
 # ROV系统设计的介绍
 此六推进器小型ROV以STM32F407VET6为主控芯片，采用水面岸基⾼压直流24V供电，  
-为了实现摄像头的功能，选择以太网通信方案，通过复合脐带缆将动力与以太网信号输送至水下驱动部分。  
+为了实现摄像头的功能，选择以太网通信方案，通过脐带缆将动力与以太网信号输送至水下密封舱中。  
 电路板分为四个模块:   
 1.电调驱动模块  
 2.多级DCDC降压电源模块  
@@ -59,12 +59,12 @@
 ### 2. 温湿度传感器    
  
 
-  > **参考：**  
+  > **参考：**  （端子 XH2.54)
 <img width="260" height="250" alt="000d7bb960bbd8fa7192fdee13440d75_720" src="https://github.com/user-attachments/assets/e3a569dd-29d8-4e2f-ac4a-8f524022f4e9" />
 <img width="300" height="250" alt="5341b2844a6c0e580578242b02e429b2_720" src="https://github.com/user-attachments/assets/8f9d0fc6-a4a9-4156-84e1-f7f92fa5699b" />  
 
 ### 3. 摄像头  
-> **参考：**  IMX307 网络摄像头模组 DC12V供电   
+> **参考：**  IMX307 网络摄像头模组 DC12V供电  （端子 MX1.25） 
 <img width="240" height="220" alt="bc92b56fc3557287788037797812d187_720" src="https://github.com/user-attachments/assets/861a218f-03ed-496b-b5bd-0f49adb683c1" />
 <img width="220" height="220" alt="daeab980037aac4d4e9659abc597383d_720" src="https://github.com/user-attachments/assets/9c4b4a97-f6f2-406b-bf91-e50c76e9180b" />
 <br>  
@@ -74,7 +74,8 @@
   >  探照灯（供电12V)，姿态陀螺仪等接口，以及串口调试，GPIO接口等
 <img width="200" height="200" alt="d96eb445224d210bc213a4def4e1f523" src="https://github.com/user-attachments/assets/02df0760-9463-41e6-9d21-50819d186084" />
 <img width="180" height="200" alt="6e7d976220f9b6ba8651b4d6ee719a09_720" src="https://github.com/user-attachments/assets/2994ccb4-0a5e-437f-aa86-aa1432ca1434" />
-<img width="240" height="200" alt="3b54dc04182e4079ab0fd0604c82c331_720" src="https://github.com/user-attachments/assets/251ff13b-6d29-4ff1-b064-900c392122fe" />
+  
+  <img width="240" height="200" alt="3b54dc04182e4079ab0fd0604c82c331_720" src="https://github.com/user-attachments/assets/251ff13b-6d29-4ff1-b064-900c392122fe" />
 <img width="220" height="200" alt="5210e7315d6d1ff7aa8be2cdc708c282_720" src="https://github.com/user-attachments/assets/44ef85ac-2344-4cce-b77b-97defd593d93" />
 
 
