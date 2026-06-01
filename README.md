@@ -16,7 +16,7 @@
 ## 一.  驱动部分
 
 ###  1. 推进器
- * 需考虑推力，体积，整体协调性等因素。
+ * 需考虑推力、体积、整体协调性等因素。
  * 选择直流无刷电机。
 > **方案：**  6 个 ROVMAKER 24V 水下推进器 正反桨
 
@@ -41,7 +41,7 @@
 
 
   ###  3. 舵机
-* 需考虑扭矩，空载速度，体积，防水等因素。
+* 需考虑扭矩、空载速度、体积、防水等因素。
 > **方案：**  夹爪 斯普特 SPT5425LV-W 防水舵机 ， 摄像头若添加云台可参考 银燕 EMAX ES08MD II 微型舵机
 
 <img width="350" height="250" alt="0d015c6e706cfab896a912e346b672c6_720" src="https://github.com/user-attachments/assets/c59d7846-82a7-47a0-b6f0-263bff31387a" />
@@ -74,21 +74,38 @@
   >  探照灯（供电12V)，姿态陀螺仪等接口，以及串口调试，GPIO接口等
 <img width="200" height="200" alt="d96eb445224d210bc213a4def4e1f523" src="https://github.com/user-attachments/assets/02df0760-9463-41e6-9d21-50819d186084" />
 <img width="180" height="200" alt="6e7d976220f9b6ba8651b4d6ee719a09_720" src="https://github.com/user-attachments/assets/2994ccb4-0a5e-437f-aa86-aa1432ca1434" />
-  
-  <img width="240" height="200" alt="3b54dc04182e4079ab0fd0604c82c331_720" src="https://github.com/user-attachments/assets/251ff13b-6d29-4ff1-b064-900c392122fe" />
+<img width="240" height="200" alt="3b54dc04182e4079ab0fd0604c82c331_720" src="https://github.com/user-attachments/assets/251ff13b-6d29-4ff1-b064-900c392122fe" />
 <img width="220" height="200" alt="5210e7315d6d1ff7aa8be2cdc708c282_720" src="https://github.com/user-attachments/assets/44ef85ac-2344-4cce-b77b-97defd593d93" />
 
 
  <br><br><br>  
  ## 三. 电源部分
- 
+### DCDC降压  
+#### SCT2650 (+24V转+12V)
+输入电压: 4.5V~60V  
+输出电压: 12V  
+输出电流: 最大5A  
+异步整流，抵御高压浪涌，防止直通短路。  
+#### SCT2450 (+12V转+6V)   给舵机供电
+输入电压：3.8V~36V  
+输出电压：6V  
+输出电流：最大5A  
+**同步整流，相对减少发热**。
+#### SCT2430 (+12V转+5V)  
+输入电压：3.8V~36V  
+输出电压：5V  
+输出电流：最大3.5A  
+**同步整流，相对减少发热**。  
+* 所选择的SCT系列具有宽电压输入的特点，**底部均设计了散热焊盘**，还有欠压锁定、过温保护等功能，有效保护芯片；**输出电流满足后续负载要求，且均留有余量** 。又芯片手册介绍详细，有利于选型，进而实现芯片性能，且SCT系列成本相对较低。
+<br>
+       
 ### LDO降压  
-#### TPS73733 （+5V转+3V3)  
-输入电压:2.2V~5.5V  
-输出电压:固定3.3V  
+#### TPS73733 (+5V转+3V3)  
+输入电压: 2.2V~5.5V  
+输出电压: 固定3.3V  
 输出电流: 最大1A 
-TPS73733的超低压差可以减少自身发热，低静态电流可以减少功耗，且具有反向电流保护等功能  
-又由选择SOT-223封装，可以使得芯片在密封舱中温升更小
+TPS73733的**超低压差可以减少自身发热**，低静态电流可以减少功耗，且具有反向电流保护等功能，  
+**又由选择SOT-223封装，可以使得芯片在密封舱中温升更小**。
 
 
 
