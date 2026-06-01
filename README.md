@@ -44,9 +44,8 @@
 * 需考虑扭矩、空载速度、体积、防水等因素。
 > **方案：**  夹爪 NANGU 35KG 潜水舵机（堵转电流2~3A) ， 摄像头若添加云台可参考 银燕 EMAX ES08MD II 微型舵机
 
-<img width="200" height="250" alt="1af7928793e2a3ad60a34a430e5b665c_720" src="https://github.com/user-attachments/assets/ae6b0d1a-611a-4802-856a-0085be94acd1" />
-<img width="300" height="250" alt="c5d734da20287fc41ad8aad1bb2f76d4_720" src="https://github.com/user-attachments/assets/65ed4d40-ab5d-436c-9b63-f2e80216f096" />
-
+<img width="220" height="250" alt="1af7928793e2a3ad60a34a430e5b665c_720" src="https://github.com/user-attachments/assets/ae6b0d1a-611a-4802-856a-0085be94acd1" />
+<img width="280" height="250" alt="c5d734da20287fc41ad8aad1bb2f76d4_720" src="https://github.com/user-attachments/assets/65ed4d40-ab5d-436c-9b63-f2e80216f096" />
 <img width="250" height="250" alt="02439636d6bc7dec981397c0637d4459_720" src="https://github.com/user-attachments/assets/f7e21334-5cbf-4296-883a-4a9b481ba2b4" />
  <br><br><br>
 
@@ -57,6 +56,7 @@
 
 
   <img width="260" height="200" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
+  
     
 ### 2. 温湿度传感器    
  
