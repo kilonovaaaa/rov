@@ -5,8 +5,8 @@
 1.电调驱动模块  
 2.多级DCDC降压电源模块  
 3.主控和外设接口模块，LDO降压电路  
-4.微型百兆交换机板，建立通信  （供电5V~12V)
-  <img width="120" height="120" alt="df9ab95c752fe5d95a556db47fde8d25_720" src="https://github.com/user-attachments/assets/79116558-786c-41f8-812d-2544eb9bb9a6" />
+4.微型百兆交换机板，建立通信  （供电5V~12V)  
+<img width="120" height="120" alt="df9ab95c752fe5d95a556db47fde8d25_720" src="https://github.com/user-attachments/assets/79116558-786c-41f8-812d-2544eb9bb9a6" />
 
   
 本介绍将从驱动和外设选型，电源设计，电路保护和隔离，以及装配几个部分进行说明，  
