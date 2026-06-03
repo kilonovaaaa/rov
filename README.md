@@ -13,12 +13,16 @@
 需要考虑的余量设计和热量管理则体现在选型，板子设计和装配中。
  <br><br><br>
 
-## 一.  驱动部分
+## 一.  驱动部分  
+ROV的功率主要取决于动力系统，即推进器，所以应先考虑好驱动的选型；  
+各选型除了重点关注电气参数，还要看体积，性能是不是适配。
 
-###  1. 推进器
- * 需考虑推力、体积、整体协调性等因素。
- * 选择直流无刷电机。
+###  1. 推进器  
+挑选可由24V供电的推进器，可以适当减少脐带缆的线损，且24V供电便于后续电源设计
 > **方案：**  6 个 ROVMAKER 24V 水下推进器 正反桨
+
+  **【关注参数】：最大输出电流 15A**
+  
 
 
 
@@ -27,22 +31,29 @@
   <img width="280" height="250" alt="f84040c7bb4e945844ff14d86c1d2d3b_720" src="https://github.com/user-attachments/assets/f1820e62-1f0a-40a5-aa80-6f9ba28a50ca" />
 
 </div>
+<br>
+  
+  ###  2. 电子调速器
+挑选电调重点看电流，结合余量设计，最好选择持续电流为1.5倍推进器峰值的电调：1.5×15A=22.5A
 
-###  2. 电子调速器
-* 选择独立电调，其相较于内部集成电调，能更稳定持续地输出推力，且成本低。  
-* 需考虑输入电压以及尺寸等参数，支持双向。  
-* 电调持续电流应根据推进器参数选择，**最好选择持续电流为<1.2 倍推进器峰值电流>的电调**，  
-   **又考虑到密封舱内散热受限，则可通过选择更大规格的电调，来降低mos导通热损耗**，且大规格电调在市面上型号更丰富，适配性更好。
 > **方案：**  2 个 RuiBet 45A 四合一电调 （余下的两个接口做备用）
 
-
-  <img src="https://github.com/user-attachments/assets/9a00fff0-6a99-4727-af38-a84e8b1d9a59" width="200" />
+45A远大于22.5A，有效预防未知风险的发生，而且在一定程度上还能减少发热  
+<br>
+**【安装孔距：30.5mm/M4】**  
+**【接线端子：SH1.0_8P】**  
+**【线序：NC-GND-NC-ADC-PWM4-PWM3-PWM2-PWM1】**  
+<img src="https://github.com/user-attachments/assets/9a00fff0-6a99-4727-af38-a84e8b1d9a59" width="200" />
 <img width="320" height="200" alt="42acd2ad6ac0a1f1876194c1bc5a01f1_720" src="https://github.com/user-attachments/assets/286d5e2b-ba2a-4920-b492-f99b5e91473d" />
-
+<br>
 
   ###  3. 舵机
-* 需考虑扭矩、空载速度、体积、防水等因素。
-> **方案：**  夹爪 NANGU 35KG 潜水舵机（堵转电流2~3A) ， 摄像头若添加云台可参考 银燕 EMAX ES08MD II 微型舵机（堵转电流1A左右）
+要有恰当的扭矩和转速，为了便于电路保护设计，夹爪和摄像头云台的舵机均挑选6V供电，电源设计成12V转6V单独给舵机供电
+> **方案：**  夹爪 NANGU 35KG 潜水舵机， 摄像头云台 银燕 EMAX ES08MD II 微型舵机
+
+**【关注参数：夹爪舵机堵转电流 2~3A ， 摄像头云台舵机堵转电流 1A左右】**  
+**【接线端子：XH2.54_3P】**  
+**【线序：PWM-+6V-GND】**
 
 <img width="220" height="250" alt="1af7928793e2a3ad60a34a430e5b665c_720" src="https://github.com/user-attachments/assets/ae6b0d1a-611a-4802-856a-0085be94acd1" />
 <img width="280" height="250" alt="c5d734da20287fc41ad8aad1bb2f76d4_720" src="https://github.com/user-attachments/assets/65ed4d40-ab5d-436c-9b63-f2e80216f096" />
@@ -52,29 +63,42 @@
 ## 二. 外设部分  
 ### 1. 深度传感器   
   
-> **参考：**  实际需要5V供电 （端子 MX1.25）
+> **方案：**
 
-
-  <img width="260" height="200" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
   
+  **【关注参数：5V供电，I2C通讯，内部无上拉电阻】**  
+  **【接线端子：MX1.25_4P】**
+  **【线序：+5V-SCL-SDA-GND】**  
+  <img width="260" height="200" alt="96c5af087ffd09066243c27ab55a1dac_720" src="https://github.com/user-attachments/assets/5d13d005-7a79-4af2-aa71-0de550d22f9d" />  
+  <br>
     
 ### 2. 温湿度传感器    
  
 
-  > **参考：**  （端子 XH2.54)
-<img width="260" height="250" alt="000d7bb960bbd8fa7192fdee13440d75_720" src="https://github.com/user-attachments/assets/e3a569dd-29d8-4e2f-ac4a-8f524022f4e9" />
+  > **方案：**  
+
+  **【关注参数：3V3~5V供电】**  
+  **【接线端子：MX1.25_3P】**
+  **【线序：+3V3-GPIO-GND】**  
+  <img width="260" height="250" alt="000d7bb960bbd8fa7192fdee13440d75_720" src="https://github.com/user-attachments/assets/e3a569dd-29d8-4e2f-ac4a-8f524022f4e9" />
 <img width="300" height="250" alt="5341b2844a6c0e580578242b02e429b2_720" src="https://github.com/user-attachments/assets/8f9d0fc6-a4a9-4156-84e1-f7f92fa5699b" />  
+<br>  
 
 ### 3. 摄像头  
-> **参考：**  IMX307 网络摄像头模组 DC12V供电  （端子 MX1.25） 
+> **方案：**  IMX307 网络摄像头模组 DC12V供电  （端子 MX1.25）
+
+   **【关注参数：12V供电】**    
+**【接线端子：MX1.25_2P】**  
+**【线序：+12V-GND】**
 <img width="240" height="220" alt="bc92b56fc3557287788037797812d187_720" src="https://github.com/user-attachments/assets/861a218f-03ed-496b-b5bd-0f49adb683c1" />
 <img width="220" height="220" alt="daeab980037aac4d4e9659abc597383d_720" src="https://github.com/user-attachments/assets/9c4b4a97-f6f2-406b-bf91-e50c76e9180b" />
 <br>  
   
-  ### 4. 预留
+  ### 4. 预留外设接口
   
-  >  探照灯（供电12V，电源线1平，信号线0.15平)，姿态陀螺仪等接口，以及串口调试，I2C接口等
-<img width="200" height="200" alt="d96eb445224d210bc213a4def4e1f523" src="https://github.com/user-attachments/assets/02df0760-9463-41e6-9d21-50819d186084" />
+  探照灯【12V供电，预留拔插式接线端子】，  
+  姿态陀螺仪，以及串口调试，I2C接口等【小功率均预留MX1.25接口】  
+  <img width="200" height="200" alt="d96eb445224d210bc213a4def4e1f523" src="https://github.com/user-attachments/assets/02df0760-9463-41e6-9d21-50819d186084" />
 <img width="180" height="200" alt="6e7d976220f9b6ba8651b4d6ee719a09_720" src="https://github.com/user-attachments/assets/2994ccb4-0a5e-437f-aa86-aa1432ca1434" />
 <img width="240" height="200" alt="3b54dc04182e4079ab0fd0604c82c331_720" src="https://github.com/user-attachments/assets/251ff13b-6d29-4ff1-b064-900c392122fe" />
 <img width="220" height="200" alt="5210e7315d6d1ff7aa8be2cdc708c282_720" src="https://github.com/user-attachments/assets/44ef85ac-2344-4cce-b77b-97defd593d93" />
